@@ -1,0 +1,23 @@
+a:link{
+    color : #FF0000;
+}
+a:visited{
+    color : #0015ff;
+}
+a:hover{
+    color:#FF00FF;
+}
+p{
+    display: none;
+    background-color: yellow;
+    padding:20px;
+}
+div:hover p{
+    display: block;
+}
+p i:first-child{
+    color:blue;
+}
+q:lang(no){
+    quotes: "~""~"
+}

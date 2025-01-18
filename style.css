@@ -1,0 +1,18 @@
+
+a[target= "_top"]{
+    background-color:yellow;
+}
+.class1 .class2{
+    background-color: red;
+}
+.class1.class2{
+    background-color: maroon;
+}
+[class = "foo"{
+    color: red;
+}]
+[class ~="color-red"]{
+    color:red;
+}
+[class]
+<div class = "color-red foo-bar the-div"> This wiil be red </div>

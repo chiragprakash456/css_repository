@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> Media queries </title>
+       <style>
+        @media only screen and (max-width:600px){
+    Body{
+        background-color: yellowgreen;
+    }
+}
+[class*="col-"]{
+    width:100%;
+}
+@media only screen and (min-width: 768px){
+    .col-1 {width:8.33%;}
+    .col-2 {width:16.66%;}
+}
+@media only screen and (orientation : landscape){
+    body{
+        background-color: skyblue;
+    }
+}
+@media only screen and (max-width: 600px){
+    div.example{
+        display : none;
+    }
+}
+@media only screen and (max-width: 600px){
+    div.example{
+        font-size: 30px;
+    }
+}
+       </style>
+</head>
+<body>
+    <header>
+        Welcome
+    </header>
+    <main>
+        <div class = "col-1"> Good Morning</div>
+        <div class = "col-2"> Today is 16th January</div>
+        <div class = "col-3"> And day is Thursday</div>
+    </main>
+    <div class = "div.example"> HELLLLOOOOO </div>
+    <footer><center> 
+        _____End of File_____ </center>
+    </footer>
+</body>
+</html>

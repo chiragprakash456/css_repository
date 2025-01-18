@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements </title>
+    <style>
+        p::first-line{
+            color: #ff0000;
+            font-variant:small-caps;
+        }
+        p::first-letter{
+            color:rgb(0, 255, 234);
+        }
+        p.intro::first-letter{
+            color:#b00cbc;
+            font-size:200%;
+        }
+        h1::before{
+            content:url("chirag.jpg");
+        }
+        li::marker{
+            color: cyan;
+            font-size:30px;
+        }
+        p::selection{
+            color : rgb(226, 255, 40);
+            background : blue;
+        }
+    </style>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ut aliquid est sequi? Commodi accusamus minima nesciunt accusantium saepe et optio, necessitatibus esse quo ipsa eligendi ea. Labore, culpa harum?</p>
+    <p class = "intro"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam adipisci omnis odit autem dolorem amet, vitae pariatur mollitia repellendus laborum a hic nobis velit impedit culpa. Doloremque expedita et vel.</p>
+    <h1> Hello </h1>
+    <h2> Good After noon</h2>
+    <li>
+        <ul> 17</ul>
+        <ul> January</ul>
+        <ul> 2025</ul>
+    </li>
+</body>
+</html>

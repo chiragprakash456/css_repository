@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    a [target = '_top']
+    { background-color: yellow;}
+    body{
+        background-color: red;
+    }
+    div{
+        background-color: pink;
+    }
+    [class = "foo"{
+        color: red;
+    }]
+    [class ~="color-red"]{
+    color:red;
+}
+    div span{
+         background-color : purple;
+         }
+    a~span{
+        background-color : white;
+        }
+        p + p{
+            color: yellow;
+        }
+    .important{
+        color: orange;
+    }
+    .warning {
+        color: blue;
+    }
+    .warning.important {
+        color: green;
+    }
+</style>
+</head>
+<body>
+<a href = "http://www.wikipedia.org" target = "_top"> wikipedia.org </a>
+<a href = "http://www.wikipedia.org" target = "_blank"> wikipedia.org </a>
+<div class = "class1"></div>
+<div class = "class2"> Hello wOrld </div>
+<div.class1.class2> Hii This is div class test </div.class1.class2>
+<div.class1.class2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque odit nesciunt ipsam quod officiis eos quidem quasi temporibus illo sapiente quas iure expedita, nemo, exercitationem in, quia voluptas eveniet et. </div.class1.class2>
+<div data-color = 'red'> This will be red </div> 
+<div data-color = 'green'> this will be GREEN </div> <br>
+<div data-background = 'red'> THis will not red </div>
+<div class = "foo-123"> This will be red </div> <br>
+<div class = "foo123"> This will be red </div>
+<div class = "bar123foo"> This will be red </div>
+<div class = "barfooo123"> This will be red </div>
+<div class = "barfo0"> This will not be red </div>
+
+<div class = "color-red foo-bar the-div"> This wiil be red </div> <br> 
+<div > This is found
+<span>  to be yellow </span> <br>
+<span>  color </span> <br>
+<a href = "http://www.wikipedia.org"> click <span> here </span> </a>
+</div> 
+<p> My text is not yellow </p>
+<p> My text is yellow</p>
+<p> My text is yellow </p>
+<div class = "warning"> Theis would be some warning copy</div>
+<div class = "important warning"> This would be green color </div>
+<div class = "important"> This would be in orange color </div>
+<div class = "container"> 
+    <p> First paragraph </p>
+    <p> Second paragraph </p>
+    <p> last paragraph </p>
+    <h1> Heading 1</h1>
+    <h2> First heading </h2>
+    <h3> Second heading </h3>
+</div>
+</body>
+</html>
